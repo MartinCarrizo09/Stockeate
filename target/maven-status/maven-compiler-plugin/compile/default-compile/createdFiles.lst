@@ -1,0 +1,8 @@
+ar\edu\utnfrc\inventario\config\SpaWebConfig.class
+ar\edu\utnfrc\inventario\servicio\ProductoServicio.class
+ar\edu\utnfrc\inventario\config\CorsConfig.class
+ar\edu\utnfrc\inventario\AplicacionInventario.class
+ar\edu\utnfrc\inventario\dominio\Producto.class
+ar\edu\utnfrc\inventario\api\AsesorErrores.class
+ar\edu\utnfrc\inventario\repositorio\ProductoRepositorio.class
+ar\edu\utnfrc\inventario\api\ProductoControlador.class

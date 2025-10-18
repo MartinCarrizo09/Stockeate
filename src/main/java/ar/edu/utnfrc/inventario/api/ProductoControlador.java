@@ -4,6 +4,7 @@ import ar.edu.utnfrc.inventario.dominio.Producto;
 import ar.edu.utnfrc.inventario.servicio.ProductoServicio;
 import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.*;
 
 import java.net.URI;
@@ -12,7 +13,12 @@ import java.util.List;
 /**
  * Controlador REST con CRUD básico. Respuestas claras para facilitar las pruebas.
  */
+/**
+ * @CrossOrigin se deja como respaldo para dev; es redundante
+ * con la configuración global en CorsConfig.
+ */
 @RestController
+@CrossOrigin(origins = "http://localhost:5173")
 @RequestMapping("/api/productos")
 public class ProductoControlador {
 
@@ -51,4 +57,3 @@ public class ProductoControlador {
         return servicio.eliminar(id) ? ResponseEntity.noContent().build() : ResponseEntity.notFound().build();
     }
 }
-
