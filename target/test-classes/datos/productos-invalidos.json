@@ -1,0 +1,6 @@
+[
+  { "nombre": "", "precio": 10.0, "stock": 1 },
+  { "nombre": "Bolsa Resistente", "precio": -5.0, "stock": 5 },
+  { "nombre": "Film Stretch", "precio": 100.0, "stock": -1 }
+]
+

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Producto",
+  "type": "object",
+  "required": ["id", "nombre", "precio", "stock", "creadoEn"],
+  "properties": {
+    "id": { "type": "integer" },
+    "nombre": { "type": "string" },
+    "precio": { "type": "number" },
+    "stock": { "type": "integer" },
+    "creadoEn": { "type": "string", "format": "date-time" }
+  },
+  "additionalProperties": false
+}
+
